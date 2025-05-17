@@ -16,9 +16,16 @@ class UserModel extends Authenticatable implements MustVerifyEmail
 
     protected $primaryKey = 'user_id';
 
-    protected $fillable = ['level_id', 'username', 'nama', 'password'];
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+        'google_id',
+        'google_token',
+        'google_refresh_token',
+    ];
 
     protected $hidden = ['password', 'remember_token'];
 
-    protected $casts = ['password' => 'hashed', 'email_verified_at' => 'datetime'];
+    protected $casts = ['password' => 'hashed'];
 }
