@@ -10,7 +10,11 @@
         <link rel="stylesheet" href="globals.css" />
         <link rel="stylesheet" href="styleguide.css" />
         <link rel="stylesheet" href="style.css" />
-        <script src="js/script.js" defer></script>
+     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.min.js"></script>
+    <script src="js/robot-viewer.js" defer></script>
+    <script src="js/script.js" defer></script>
     </head>
     <body>
         <div class="landing-page">
@@ -110,6 +114,9 @@
                                 <img class="WAVE-BACKGROUND-2" src="img/WAVE BACKGROUND 3.png" />
                             </div>
                             <div class="frame-16">
+                                <div id="robot-container" style="position: absolute; width: 600px; height: 600px; top: 300px; left: 1200px; z-index: 10;">
+                                <div id="viewer" style="width: 100%; height: 100%;"></div>
+                                </div>
                                 <div class="frame-17">
                                     <p class="heading">
                                         <span class="span">Welcome To <br /></span>

@@ -4,8 +4,11 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-import './bootstrap';
+import * as THREE from 'three';
 import { createApp } from 'vue';
+import './bootstrap';
+window.THREE = THREE;
+
 
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
@@ -37,3 +40,5 @@ app.component('example-component', ExampleComponent);
  */
 
 app.mount('#app');
+
+window.THREE = THREE;

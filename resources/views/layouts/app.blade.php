@@ -15,6 +15,7 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <script type="module" src="{{ asset('js/robot-viewer.js') }}"></script>
 </head>
 <body>
     <div id="app">
